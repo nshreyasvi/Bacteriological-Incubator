@@ -1,6 +1,5 @@
 # Bacteriological-Incubator
-This project aims at making a low cost bacteriological incubator for helping people develop microorganism cultures at their homes with ease.
-
+This project aims at making a low cost bacteriological incubator for helping people develop microorganism cultures at their homes with ease. This repository contains code used for temperature regulation for [low-cost bacteriological incubator](https://hackaday.io/project/145830-low-cost-bacteriological-incubator).
 ## Overview :
 The microbiological incubator is deployed in research and industry in a wide variety of applications with living organisms. Cell cultures and micro-organisms must be incubated in a controlled atmosphere. 
 Incubators are necessary equipment for any laboratory conducting cell culture and tissue culture work. They protect cells from changes in temperature, humidity, CO2 and O2.
