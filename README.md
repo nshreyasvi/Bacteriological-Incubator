@@ -28,8 +28,6 @@ Our model consists of –
 5)	Power supply (SMPS)
 6)	Temperature Sensor
 
-![alt text](https://preview.ibb.co/kos7sH/20180403_140213.jpg)
-
 1) **Peltier tile** - Thermoelectric coolers operate according to the Peltier effect. The effect creates a temperature difference by transferring heat between two electrical junctions. When the current flows through the junctions of the two conductors, heat is removed at one junction and cooling occurs.
 
 2) **Arduino microcontroller** - The Arduino Uno R3  a microcontroller board based on the ATmega328. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started.
@@ -44,11 +42,7 @@ In relation to mains voltage, relays have 3 possible connections :
            
 5) **Thermocol** – The main benefit of using thermocol is that it is inexpensive and it  provides high thermal resistance, so it does not allow the heat to escape out. It can withstand temperature in the range of -50 °C to 75 °C.
 
-![alt text](https://preview.ibb.co/jG9LCH/20180403_135538.jpg)
-
 As shown in the circuit diagram above, we have an SMPS ( i.e; power supply) which is provided with 4 channels having positive and negative terminals. Using wires, we connect the positive terminal of the SMPS to the COM pin of one of the relays. The negative terminal of SMPS is connected to one end of the Peltier tile and the other end is connected to the NC pin of the relay module. This step is repeated for all the 4 relays. This relay module is then connected to the Arduino Uno microcontroller. Using the controller, we can regulate the temperature control through the temperature sensor system. 
-
-![alt text](https://preview.ibb.co/jjktXH/20180403_140019.jpg)
 
 ## Working : 
 When the power is supplied (SMPS converts the current efficiently), current passes through the relay module. The relay module is operated through the Arduino Uno microcontroller (using a software program in Laptop). This relay module acts as an electrical switch which allows only specific current to pass through the peltier tiles. If the current is made to pass through only one relay, then only one Peltier tile gets heated. Similarly if the current is made to pass through all the relays, then all the tiles get heated. If a Peltier element is energised, one side is cooled and the opposite side simultaneously heats up. Simply by reversing the polarity of the supply voltage, the hot and cold sides of the Peltier element can be swapped. The advantages of Peltier technology lie in a low energy consumption in partial load operation, a low noise level and high control precision. Since cooled incubators with Peltier elements work almost without any vibration, they are particularly suitable for protein crystallography and breeding insects.
